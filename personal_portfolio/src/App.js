@@ -1,11 +1,18 @@
-import React from "react";
+import React from 'react';
 
-const  App = () =>{
+import HomeScreen from './screens/HomeScreen';
+
+const App = () => {
   return (
     <>
-      <h1>hello</h1>
+    
+      <main>
+        <HomeScreen />
+      </main>
+
+     
     </>
   );
-}
+};
 
 export default App;
