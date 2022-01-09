@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed">
+      <AppBar position="fixed"  style={{ background: '#2E3B55' }}>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Atti Rehman
