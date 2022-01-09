@@ -12,7 +12,7 @@ const Header = () => {
     <Box className={classes.header}>
       <CssBaseline />
       <Navbar />
-      <Box className={classes.headerContainer}>
+      <Box className={classes.headerContainer} style={{ marginLeft: '50px' }}>
         <Typography varinat="h3" component="h4" className={classes.headerTitle}>
           I'm a <span style={{ paddingRight: '5px' }}></span>
           <Typed
@@ -28,7 +28,11 @@ const Header = () => {
           <br />
           base on your need..
         </Typography>
-        <Decorator lable="About Me" Icon={<ArrowDownwardRoundedIcon />} />
+        <Decorator
+          lable="About Me"
+          withIcon="true"
+          Icon={<ArrowDownwardRoundedIcon />}
+        />
       </Box>
     </Box>
   );

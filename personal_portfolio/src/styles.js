@@ -93,4 +93,22 @@ export const useStyles = makeStyles((theme) => ({
       },
     },
   },
+
+  // About Section
+
+  section: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(10, 0, 8, 0),
+  },
+
+  divider: {
+    width: '64px',
+    height: '4px',
+    backgroundColor: '#2E3B55',
+  },
+
+  responsiveImg: {
+    width: '100%',
+    height: 'auto',
+  },
 }));
