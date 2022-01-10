@@ -3,12 +3,12 @@ import { Box, CssBaseline, Typography } from '@material-ui/core';
 import Decorator from './Decorator';
 import { useStyles } from '../../styles';
 
-export const Divider = () => {
+export const Divider = ({ style }) => {
   const classes = useStyles();
-  return <div className={classes.divider}></div>;
+  return <div className={classes.divider} style={style}></div>;
 };
 
-const Heading = ({ heading, description, aligncenter }) => {
+const Heading = ({ heading, description, aligncenter, smallText }) => {
   const classes = useStyles();
 
   return (
@@ -16,9 +16,9 @@ const Heading = ({ heading, description, aligncenter }) => {
       <CssBaseline />
       <Typography style={{ color: 'orange' }}>
         <Decorator
-          lable="About Me"
+          lable={smallText}
           withIcon="false"
-          styles={aligncenter ? { width: '100px', margin: '10px auto' } : ''}
+          styles={aligncenter ? { width: '100px', margin: '10px auto' } : {}}
         />
       </Typography>
 
@@ -29,7 +29,9 @@ const Heading = ({ heading, description, aligncenter }) => {
       >
         {heading}
       </Typography>
-      {Divider()}
+      {Divider({
+        style: aligncenter ? { margin: '16px auto' } : { margin: '16px 0' },
+      })}
       <Typography
         variant="body1"
         align={aligncenter ? 'center' : 'left'}

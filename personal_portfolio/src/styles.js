@@ -105,7 +105,6 @@ export const useStyles = makeStyles((theme) => ({
     width: '64px',
     height: '4px',
     backgroundColor: '#2E3B55',
-    margin: theme.spacing(2, 0),
   },
 
   responsiveImg: {
@@ -126,4 +125,8 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: 'bolder',
     color: 'Orange',
   },
+
+  // PortFolio
+
+  portfolioSection: {},
 }));

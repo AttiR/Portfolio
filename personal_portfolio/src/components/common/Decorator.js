@@ -10,7 +10,7 @@ const Decorator = ({ lable, withIcon, Icon, styles }) => {
         {lable}
       </Typography>
       {withIcon ? (
-        <Typography variant="span" className={classes.arrow}>
+        <Typography variant="span" className={classes.arrow} style={styles}>
           {Icon}
         </Typography>
       ) : null}

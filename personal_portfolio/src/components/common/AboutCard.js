@@ -8,7 +8,7 @@ const AboutCard = ({ label, Desc, Icon }) => {
     <Box>
       <Grid container>
         <Grid item xs={3} className={classes.AvatarCont}>
-          <Avatar className={classes.icon}> {Icon}</Avatar>
+          <Avatar className={classes.avatar}> {Icon}</Avatar>
         </Grid>
         <Grid item xs={9} className={classes.MediaText}>
           <Typography

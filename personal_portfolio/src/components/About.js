@@ -25,6 +25,7 @@ const About = () => {
           </Grid>
           <Grid item xs={12} sm={7}>
             <Heading
+              smallText="ABOUT ME"
               heading="I am Atti Rehman"
               description="With a diverse Engineering backround, a dynamic Web-developer skillled at developing complex solutions, posessing strong creative thinking skills, high energy and integrity. I offer expertise in web Development technologies like React, Node, PHP, Python, Database and Azure cloud services."
             />
