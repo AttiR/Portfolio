@@ -8,33 +8,33 @@ export const Divider = ({ style }) => {
   return <div className={classes.divider} style={style}></div>;
 };
 
-const Heading = ({ heading, description, aligncenter, smallText }) => {
+const Heading = ({ heading, description, alignCenter, smallText }) => {
   const classes = useStyles();
 
   return (
-    <Box>
+    <Box className={classes.sectionHeadingCont}>
       <CssBaseline />
-      <Typography style={{ color: 'orange' }}>
+      <Box style={{ color: 'orange', fontweight: 'bolder' }}>
         <Decorator
           lable={smallText}
           withIcon="false"
-          styles={aligncenter ? { width: '100px', margin: '10px auto' } : {}}
+          styles={alignCenter ? { width: '100px', margin: '10px  auto' } : {}}
         />
-      </Typography>
+      </Box>
 
       <Typography
         variant="h4"
-        align={aligncenter ? 'center' : 'left'}
+        align={alignCenter ? 'center' : 'left'}
         className={classes.headingTitle}
       >
         {heading}
       </Typography>
       {Divider({
-        style: aligncenter ? { margin: '16px auto' } : { margin: '16px 0' },
+        style: alignCenter ? { margin: '16px auto' } : { margin: '16px 0' },
       })}
       <Typography
         variant="body1"
-        align={aligncenter ? 'center' : 'left'}
+        align={alignCenter ? 'center' : 'left'}
         component="h6"
         className={classes.headingDescription}
       >

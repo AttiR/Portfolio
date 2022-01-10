@@ -12,7 +12,7 @@ const Header = () => {
     <Box className={classes.header}>
       <CssBaseline />
       <Navbar />
-      <Box className={classes.headerContainer} style={{ marginLeft: '50px' }}>
+      <Box className={classes.headerContainer}>
         <Typography varinat="h3" component="h4" className={classes.headerTitle}>
           I'm a <span style={{ paddingRight: '5px' }}></span>
           <Typed

@@ -1,5 +1,16 @@
 import React from 'react';
-import { Box, CssBaseline, Grid } from '@material-ui/core';
+import {
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Container,
+  CssBaseline,
+  Grid,
+  Typography,
+} from '@material-ui/core';
 import { useStyles } from '../styles';
 import Heading from './common/Heading';
 
@@ -11,22 +22,111 @@ const Portfolio = () => {
       <Grid
         container
         style={{
-          display: 'flex',
+          displa: 'flex',
           justifyContent: 'center',
-          aligncontent: 'center',
+          alignContent: 'center',
         }}
       >
         <Grid item xs={12} sm={8}>
-          <center>
-            <Heading
-              smallText="PORTFOLIO"
-              heading="Projects"
-              description="Projects Porttfolio"
-              aligncenter="true"
-            />
-          </center>
+          <Heading
+            smallText="PORTFOLIO"
+            heading="Projects"
+            alignCenter="true"
+            description="Projects Porttfolio"
+          />
         </Grid>
+
+        <Container className={classes.cardGrid} maxWidth="lg">
+          <Grid container spacing={6}>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                />
+                <CardContent className={classes.CardContent}>
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    style={{ color: 'orange' }}
+                  >
+                    hello
+                  </Typography>
+
+                  <Typography>
+                 hello
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button>View Details</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                />
+                <CardContent className={classes.CardContent}>
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    style={{ color: 'orange' }}
+                  >
+                    hello
+                  </Typography>
+
+                  <Typography>
+             hello
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button>View Details</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                />
+                <CardContent className={classes.CardContent}>
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    style={{ color: 'orange' }}
+                  >
+                    hello
+                  </Typography>
+
+                  <Typography>hello</Typography>
+                </CardContent>
+                <CardActions>
+                  <Button>View Details</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grid>
+        </Container>
       </Grid>
+      <center>
+        <Button
+          size="large"
+          style={{
+            backgroundColor: '#2E3B55',
+            color: 'white',
+            marginTop: '20px',
+          }}
+        >
+          Explore All
+        </Button>
+      </center>
     </Box>
   );
 };

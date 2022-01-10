@@ -5,12 +5,12 @@ import { useStyles } from '../../styles';
 const Decorator = ({ lable, withIcon, Icon, styles }) => {
   const classes = useStyles();
   return (
-    <Box className={classes.decorator} >
+    <Box className={classes.decorator} style={styles}>
       <Typography variant="span" className={classes.decoratorText}>
         {lable}
       </Typography>
       {withIcon ? (
-        <Typography variant="span" className={classes.arrow} style={styles}>
+        <Typography variant="span" className={classes.arrow}>
           {Icon}
         </Typography>
       ) : null}

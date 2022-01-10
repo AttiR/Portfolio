@@ -97,7 +97,6 @@ export const useStyles = makeStyles((theme) => ({
   // About Section
 
   section: {
-    backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(10, 0, 8, 0),
   },
 
@@ -126,7 +125,30 @@ export const useStyles = makeStyles((theme) => ({
     color: 'Orange',
   },
 
+  // heading component
+  sectionHeadingCont: {
+    padding: theme.spacing(1),
+  },
+
   // PortFolio
 
-  portfolioSection: {},
+  portfolioSection: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(10, 0, 8, 0),
+  },
+
+  cardGrid: {
+    padding: '20px 5px',
+  },
+  card: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  cardMedia: {
+    paddingTop: '56.25%',
+  },
+  cardContent: {
+    flexGrow: '1',
+  },
 }));
