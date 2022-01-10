@@ -24,9 +24,9 @@ const Header = () => {
         </Typography>
 
         <Typography variant="h3" component="h4" className={classes.headerDesc}>
-          I create Website and application,
+          MERN Stack, Python (Flask), PHP
           <br />
-          base on your need..
+          SQL, MongoDB, Azure..
         </Typography>
         <Decorator
           lable="About Me"

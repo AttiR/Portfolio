@@ -14,11 +14,14 @@ const Heading = ({ heading, description, aligncenter }) => {
   return (
     <Box>
       <CssBaseline />
-      <Decorator
-        lable="About Me"
-        withIcon="false"
-        styles={aligncenter ? { width: '100px', margin: '10px auto' } : ''}
-      />
+      <Typography style={{ color: 'orange' }}>
+        <Decorator
+          lable="About Me"
+          withIcon="false"
+          styles={aligncenter ? { width: '100px', margin: '10px auto' } : ''}
+        />
+      </Typography>
+
       <Typography
         variant="h4"
         align={aligncenter ? 'center' : 'left'}

@@ -105,10 +105,25 @@ export const useStyles = makeStyles((theme) => ({
     width: '64px',
     height: '4px',
     backgroundColor: '#2E3B55',
+    margin: theme.spacing(2, 0),
   },
 
   responsiveImg: {
     width: '100%',
     height: 'auto',
+  },
+  AvatarCont: {
+    display: 'flex',
+    flexFlow: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  avatar: {
+    backgroundColor: '#2E3B55',
+    color: 'white',
+  },
+  headingMedia: {
+    fontWeight: 'bolder',
+    color: 'Orange',
   },
 }));
