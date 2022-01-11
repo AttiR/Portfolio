@@ -12,6 +12,7 @@ import {
   Typography,
 } from '@material-ui/core';
 
+
 import image1 from '../images/project1.jpg';
 import image2 from '../images/project2.jpg';
 import image3 from '../images/project3.jpg';

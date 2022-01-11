@@ -151,4 +151,11 @@ export const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: '1',
   },
+
+  // Footer
+  footer: {
+    backgroundColor: '#2E3B55',
+    padding: '50px',
+    color:'#fff'
+  },
 }));

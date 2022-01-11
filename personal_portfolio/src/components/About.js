@@ -11,7 +11,7 @@ const About = () => {
   const classes = useStyles();
   return (
     <Container>
-      <Box className={classes.section}>
+      <Box className={classes.section} id="About">
         <CssBaseline />
         <Grid container spacing={3}>
           <Grid item sm={5}>
