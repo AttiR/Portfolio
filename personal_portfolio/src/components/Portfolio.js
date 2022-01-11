@@ -11,6 +11,11 @@ import {
   Grid,
   Typography,
 } from '@material-ui/core';
+
+import image1 from '../images/project1.jpg';
+import image2 from '../images/project2.jpg';
+import image3 from '../images/project3.jpg';
+
 import { useStyles } from '../styles';
 import Heading from './common/Heading';
 
@@ -40,75 +45,162 @@ const Portfolio = () => {
           <Grid container spacing={6}>
             <Grid item xs={12} sm={6} md={4} lg={4}>
               <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image="https://source.unsplash.com/random"
-                  title="image title"
-                />
+                <a
+                  href="https://github.com/AttiR/Ayna-Fashion_Ecommerce_plateform"
+                  rel="noreferrer"
+                  target="_blank"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={image1}
+                    title="image title"
+                  />
+                </a>
                 <CardContent className={classes.CardContent}>
-                  <Typography
-                    variant="h6"
-                    gutterBottom
-                    style={{ color: 'orange' }}
+                  <a
+                    href="https://github.com/AttiR/Ayna-Fashion_Ecommerce_plateform"
+                    rel="noreferrer"
+                    target="_blank"
+                    style={{ textDecoration: 'none' }}
                   >
-                    hello
-                  </Typography>
+                    <Typography
+                      variant="h6"
+                      gutterBottom
+                      style={{ color: 'orange' }}
+                    >
+                      Ayna's Fashion
+                    </Typography>
+                  </a>
 
                   <Typography>
-                 hello
+                    Ayna's Fashion is Ecommerece Platform buit with MERN Stack
+                    and Redux.{' '}
+                    <a
+                      href="https://ayna-fashion.herokuapp.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      Live Preview of App{' '}
+                    </a>
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button>View Details</Button>
+                  <Button color="primary">View Details</Button>
                 </CardActions>
               </Card>
             </Grid>
 
             <Grid item xs={12} sm={6} md={4} lg={4}>
               <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image="https://source.unsplash.com/random"
-                  title="image title"
-                />
+                <a
+                  href="https://github.com/AttiR/EChatCode"
+                  rel="noreferrer"
+                  target="_blank"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={image2}
+                    title="image title"
+                  />
+                </a>
                 <CardContent className={classes.CardContent}>
-                  <Typography
-                    variant="h6"
-                    gutterBottom
-                    style={{ color: 'orange' }}
+                  <a
+                    href="https://github.com/AttiR/EChatCode"
+                    rel="noreferrer"
+                    target="_blank"
+                    style={{ textDecoration: 'none' }}
                   >
-                    hello
-                  </Typography>
+                    <Typography
+                      variant="h6"
+                      gutterBottom
+                      style={{ color: 'orange' }}
+                    >
+                      EChatCode
+                    </Typography>
+                  </a>
 
                   <Typography>
-             hello
+                    EchatCode is web coding disscussion forum, Dynamic Website
+                    using HTML, CSS, JavaScript, PHP, and MySQL.{' '}
+                    <a
+                      href="https://attir.azurewebsites.net/"
+                      rel="noreferrer"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      {' '}
+                      Live Preview{' '}
+                    </a>
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button>View Details</Button>
+                  <a
+                    href="https://github.com/AttiR/EChatCode"
+                    rel="noreferrer"
+                    target="_blank"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Button color="primary">View Details</Button>{' '}
+                  </a>
                 </CardActions>
               </Card>
             </Grid>
+
             <Grid item xs={12} sm={6} md={4} lg={4}>
               <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image="https://source.unsplash.com/random"
-                  title="image title"
-                />
+                <a
+                  href="https://github.com/AttiR/Gymkhana-gladiators-cc"
+                  rel="noreferrer"
+                  target="_blank"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={image3}
+                    title="image title"
+                  />
+                </a>
                 <CardContent className={classes.CardContent}>
-                  <Typography
-                    variant="h6"
-                    gutterBottom
-                    style={{ color: 'orange' }}
+                  <a
+                    href="https://github.com/AttiR/Gymkhana-gladiators-cc"
+                    rel="noreferrer"
+                    target="_blank"
+                    style={{ textDecoration: 'none' }}
                   >
-                    hello
-                  </Typography>
+                    <Typography
+                      variant="h6"
+                      gutterBottom
+                      style={{ color: 'orange' }}
+                    >
+                      Gymkhana-gladiator-cc
+                    </Typography>
+                  </a>
 
-                  <Typography>hello</Typography>
+                  <Typography>
+                    Local Cricket Club Website, Dynamic Website using Flask
+                    Framework, Python, JavaScript, PostGreSQL.
+                    <a
+                      href="https://helsinki-gymkhana-cc.herokuapp.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      Live Preview
+                    </a>
+                  </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button>View Details</Button>
+                  <a
+                    href="https://github.com/AttiR/Gymkhana-gladiators-cc"
+                    rel="noreferrer"
+                    target="_blank"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Button color="primary">View Details</Button>
+                  </a>
                 </CardActions>
               </Card>
             </Grid>
@@ -116,16 +208,23 @@ const Portfolio = () => {
         </Container>
       </Grid>
       <center>
-        <Button
-          size="large"
-          style={{
-            backgroundColor: '#2E3B55',
-            color: 'white',
-            marginTop: '20px',
-          }}
+        <a
+          href="https://github.com/AttiR"
+          aria-details="git hub link"
+          rel="noreferrer"
+          target="_blank"
         >
-          Explore All
-        </Button>
+          <Button
+            size="large"
+            style={{
+              backgroundColor: '#2E3B55',
+              color: 'white',
+              marginTop: '20px',
+            }}
+          >
+            Explore All
+          </Button>
+        </a>
       </center>
     </Box>
   );
