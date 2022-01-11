@@ -152,10 +152,15 @@ export const useStyles = makeStyles((theme) => ({
     flexGrow: '1',
   },
 
+  // Contact
+  contactSection: {
+    padding: theme.spacing(10, 0, 8, 0),
+  },
+
   // Footer
   footer: {
     backgroundColor: '#2E3B55',
     padding: '50px',
-    color:'#fff'
+    color: '#fff',
   },
 }));

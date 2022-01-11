@@ -36,8 +36,9 @@ const Navbar = () => {
               <Link to="About">
                 <Button color="inherit">About</Button>
               </Link>
-
-              <Button color="inherit">Contact</Button>
+              <Link to="Contact">
+                <Button color="inherit">Contact</Button>
+              </Link>
             </Box>
           </Box>
 
