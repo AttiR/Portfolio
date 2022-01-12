@@ -1,4 +1,11 @@
-import { Box, Drawer, List, ListItem, ListItemText } from '@material-ui/core';
+import {
+  Box,
+  Button,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+} from '@material-ui/core';
 import React from 'react';
 import { useStyles } from '../styles';
 import { Link } from 'react-scroll';
@@ -18,9 +25,11 @@ const DrawerComponent = ({ initialState, handleDrawerToogler, navlinks }) => {
             {navlinks.map((item, i) => (
               <ListItem key={i}>
                 <Link to={`${item.id}`}>
-                  <ListItemText className={classes.listItem}>
-                    {item.label}
-                  </ListItemText>
+                  <Button>
+                    <ListItemText className={classes.listItem}>
+                      {item.label}
+                    </ListItemText>
+                  </Button>
                 </Link>
               </ListItem>
             ))}

@@ -31,7 +31,7 @@ const Header = () => {
   ];
 
   return (
-    <Box className={classes.header}>
+    <Box className={classes.header} id="Header">
       <CssBaseline />
       <Navbar navlinks={navlinks} handleDrawerToogler={handleDrawerToogler} />
       <DrawerComponent

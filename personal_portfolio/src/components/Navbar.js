@@ -24,6 +24,7 @@ const Navbar = ({ navlinks, handleDrawerToogler }) => {
           <Typography variant="h6" className={classes.title}>
             Atti Rehman
           </Typography>
+
           <Box component={Hidden} xsDown>
             <Box>
               {navlinks.map((item, i) => (
