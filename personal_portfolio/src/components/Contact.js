@@ -28,18 +28,27 @@ const Contact = () => {
   const templateid = process.env.REACT_APP_TEMPLATE_ID;
   const serviceid = process.env.REACT_APP_SERVICE_ID;
 
+ 
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     // EmailJs
-    emailjs.sendForm({ serviceid }, { templateid }, e.target, { userid }).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        serviceid,
+        templateid,
+        e.target,
+        userid
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     e.target.reset();
     showResult(true);
   };
@@ -110,7 +119,6 @@ const Contact = () => {
                             fullWidth
                             id="firstName"
                             label="First Name"
-                            autoFocus
                           />
                         </Grid>
                         <Grid item xs={12} sm={6}>
