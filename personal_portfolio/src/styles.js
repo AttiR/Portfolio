@@ -156,6 +156,14 @@ export const useStyles = makeStyles((theme) => ({
   contactSection: {
     padding: theme.spacing(10, 0, 8, 0),
   },
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
 
   // Footer
   footer: {
