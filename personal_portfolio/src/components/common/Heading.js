@@ -14,7 +14,7 @@ const Heading = ({ heading, description, alignCenter, smallText }) => {
   return (
     <Box className={classes.sectionHeadingCont}>
       <CssBaseline />
-      <Box style={{ color: 'orange', fontweight: 'bolder' }}>
+      <Box style={{ color: '#fb8c00', fontweight: 'bolder' }}>
         <Decorator
           lable={smallText}
           withIcon="false"

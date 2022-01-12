@@ -35,29 +35,29 @@ const About = () => {
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <AboutCard
-                    label="Web Development"
-                    Desc="Full stack Web Development, expertise in MERN Stack, Python and PHP."
+                    label="Full-Stack Development"
+                    Desc="Expertise in MERN Stack, Python, Flask, and PHP."
                     Icon={<WebIcon />}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <AboutCard
-                    label="Web Development"
-                    Desc="Full stack Web Development, expertise in MERN Stack, Python and PHP."
+                    label="DataBase"
+                    Desc="Expertise on MySQL, PostGreSQL, MongoDB"
                     Icon={<WebIcon />}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <AboutCard
-                    label="Web Development"
-                    Desc="Full stack Web Development, expertise in MERN Stack, Python and PHP."
+                    label="Cloud Services"
+                    Desc="Azure, AWS"
                     Icon={<WebIcon />}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <AboutCard
-                    label="Web Development"
-                    Desc="Full stack Web Development, expertise in MERN Stack, Python and PHP."
+                    label="Version Control"
+                    Desc="Expertise in Git, GitHub"
                     Icon={<WebIcon />}
                   />
                 </Grid>

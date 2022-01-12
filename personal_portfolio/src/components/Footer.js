@@ -1,18 +1,32 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Box, IconButton, Typography } from '@material-ui/core';
 import { useStyles } from '../styles';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   const classes = useStyles();
   return (
-    <footer className={classes.footer}>
+    <Box className={classes.footer} id="Footer">
+      <IconButton
+        className={classes.iconButton}
+        to="Header"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={1200}
+        component={Link}
+      >
+        <ArrowUpwardIcon />
+      </IconButton>
       <Typography variant="h6" align="center" gutterBottom>
         Personal PortFolio
       </Typography>
       <Typography variant="h6" align="center" gutterBottom>
         &copy; 2022_Atti
       </Typography>
-    </footer>
+    </Box>
   );
 };
 

@@ -122,7 +122,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   headingMedia: {
     fontWeight: 'bolder',
-    color: 'Orange',
+    color: '#fb8c00',
   },
 
   // heading component
@@ -139,6 +139,7 @@ export const useStyles = makeStyles((theme) => ({
 
   cardGrid: {
     padding: '20px 5px',
+    marginTop: '30px',
   },
   card: {
     height: '100%',
@@ -181,6 +182,14 @@ export const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: '#2E3B55',
     padding: '50px',
+    color: '#fff',
+    position: 'relative',
+  },
+  iconButton: {
+    position: 'absolute',
+    right: 10,
+    top: -30,
+    backgroundColor: '#2E3B55',
     color: '#fff',
   },
 }));

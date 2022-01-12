@@ -59,7 +59,7 @@ const Contact = () => {
         >
           <Grid item xs={12} sm={8}>
             <Heading
-              smallText="Contact"
+              smallText="CONTACT"
               heading="Contact ME"
               alignCenter="true"
             />

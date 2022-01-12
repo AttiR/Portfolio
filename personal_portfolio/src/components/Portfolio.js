@@ -69,27 +69,29 @@ const Portfolio = () => {
                       <Typography
                         variant="h6"
                         gutterBottom
-                        style={{ color: 'orange' }}
+                        style={{ color: '#fb8c00', margin:'10px auto' }}
                       >
                         Ayna's Fashion
                       </Typography>
                     </a>
 
                     <Typography>
-                      Ayna's Fashion is Ecommerece Platform buit with MERN Stack
-                      and Redux.{' '}
-                      <a
-                        href="https://ayna-fashion.herokuapp.com/"
-                        rel="noreferrer"
-                        target="_blank"
-                        style={{ textDecoration: 'none' }}
-                      >
-                        Live Preview of App{' '}
-                      </a>
+                      Ayna's Fashion is Ecommerece Platform built with MERN
+                      Stack and Redux.{' '}
                     </Typography>
                   </CardContent>
                   <CardActions>
                     <Button color="primary">View Details</Button>
+                    <a
+                      href="https://ayna-fashion.herokuapp.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <Button color="primary" style={{ marginLeft: '50px' }}>
+                        Live Preview
+                      </Button>
+                    </a>
                   </CardActions>
                 </Card>
               </Grid>
@@ -118,24 +120,15 @@ const Portfolio = () => {
                       <Typography
                         variant="h6"
                         gutterBottom
-                        style={{ color: 'orange' }}
+                        style={{ color: '#fb8c00' }}
                       >
                         EChatCode
                       </Typography>
                     </a>
 
                     <Typography>
-                      EchatCode is web coding disscussion forum, Dynamic Website
-                      using HTML, CSS, JavaScript, PHP, and MySQL.{' '}
-                      <a
-                        href="https://attir.azurewebsites.net/"
-                        rel="noreferrer"
-                        target="_blank"
-                        style={{ textDecoration: 'none' }}
-                      >
-                        {' '}
-                        Live Preview{' '}
-                      </a>
+                      Web coding forum, Dynamic Website built with JavaScript,
+                      PHP, and MySQL.{' '}
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -146,6 +139,16 @@ const Portfolio = () => {
                       style={{ textDecoration: 'none' }}
                     >
                       <Button color="primary">View Details</Button>{' '}
+                      <a
+                        href="https://attir.azurewebsites.net/"
+                        rel="noreferrer"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}
+                      >
+                        <Button color="primary" style={{ marginLeft: '50px' }}>
+                          Live Preview
+                        </Button>
+                      </a>
                     </a>
                   </CardActions>
                 </Card>
@@ -175,23 +178,15 @@ const Portfolio = () => {
                       <Typography
                         variant="h6"
                         gutterBottom
-                        style={{ color: 'orange' }}
+                        style={{ color: '#fb8c00' }}
                       >
                         Gymkhana-gladiator-cc
                       </Typography>
                     </a>
 
                     <Typography>
-                      Local Cricket Club Website, Dynamic Website using Flask
-                      Framework, Python, JavaScript, PostGreSQL.
-                      <a
-                        href="https://helsinki-gymkhana-cc.herokuapp.com/"
-                        rel="noreferrer"
-                        target="_blank"
-                        style={{ textDecoration: 'none' }}
-                      >
-                        Live Preview
-                      </a>
+                      Dynamic Website for local club using Flask , Python,
+                      JavaScript, PostGreSQL.
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -202,6 +197,16 @@ const Portfolio = () => {
                       style={{ textDecoration: 'none' }}
                     >
                       <Button color="primary">View Details</Button>
+                      <a
+                        href="https://helsinki-gymkhana-cc.herokuapp.com/"
+                        rel="noreferrer"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}
+                      >
+                        <Button color="primary" style={{ marginLeft: '50px' }}>
+                          Live Preview
+                        </Button>
+                      </a>
                     </a>
                   </CardActions>
                 </Card>
@@ -221,7 +226,7 @@ const Portfolio = () => {
               style={{
                 backgroundColor: '#2E3B55',
                 color: 'white',
-                marginTop: '20px',
+                marginTop: '50px',
               }}
             >
               Explore All
