@@ -14,12 +14,8 @@ import { useStyles } from '../styles';
 
 import { Link } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({ navlinks, handleDrawerToogler }) => {
   const classes = useStyles();
-
-  const menuHandler = () => {
-    console.log('menu clicked');
-  };
 
   return (
     <div className={classes.root}>
@@ -30,20 +26,26 @@ const Navbar = () => {
           </Typography>
           <Box component={Hidden} xsDown>
             <Box>
-              <Link to="Portfolio">
-                <Button color="inherit">portfolio</Button>
-              </Link>
-              <Link to="About">
-                <Button color="inherit">About</Button>
-              </Link>
-              <Link to="Contact">
-                <Button color="inherit">Contact</Button>
-              </Link>
+              {navlinks.map((item, i) => (
+                <Button
+                  key={i}
+                  to={`${item.id}`}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  component={Link}
+                  color="inherit"
+                >
+                  {item.label}
+                </Button>
+              ))}
             </Box>
           </Box>
 
           <Box component={Hidden} smUp>
-            <IconButton color="inherit" onClick={menuHandler}>
+            <IconButton color="inherit" onClick={handleDrawerToogler}>
               <MenuOpenRoundedIcon />
             </IconButton>
           </Box>
