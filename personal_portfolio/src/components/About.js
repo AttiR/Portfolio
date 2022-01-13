@@ -4,6 +4,8 @@ import Heading from './common/Heading';
 import image from '../images/image4.jpg';
 import AboutCard from './common/AboutCard';
 import WebIcon from '@material-ui/icons/Web';
+import StorageRoundedIcon from '@material-ui/icons/StorageRounded';
+import CloudUploadRoundedIcon from '@material-ui/icons/CloudUploadRounded';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import { useStyles } from '../styles';
@@ -43,15 +45,15 @@ const About = () => {
                 <Grid item xs={12} sm={6}>
                   <AboutCard
                     label="DataBase"
-                    Desc="Expertise on MySQL, PostGreSQL, MongoDB"
-                    Icon={<WebIcon />}
+                    Desc="Expertise on MySQL, PostGreSQL, MongoDB, FireBase"
+                    Icon={<StorageRoundedIcon />}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <AboutCard
                     label="Cloud Services"
                     Desc="Azure, AWS"
-                    Icon={<WebIcon />}
+                    Icon={<CloudUploadRoundedIcon />}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
